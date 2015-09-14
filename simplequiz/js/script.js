@@ -27,5 +27,8 @@ function submitAnswers() {
 			score++;
 	}
 
-	alert("You score " + score +" out of " +total);
+	var results = document.getElementById('results');
+	results.innerHTML = '<h3>You scored <span style="font-size:40px">'+score+'</span> out of <span style="font-size:40px">'+ total+ '</span></h3>';
+	alert("You score " + score +" out of "+total);
+	return false;
 }
