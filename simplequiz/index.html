@@ -2,55 +2,74 @@
 <html>
 <head>
 	<title>Fun with Quiz</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
+
 	<script src="js/script.js"></script>
 </head>
 <body>
-	<div id="container">
-		<header>
-			<h1>Simple Technology Quiz</h1>
-			<p>Test your knowledge in <strong>Technology</strong></p>
-		</header>
+	<div class="well col-md-6 col-md-offset-3">
+		<div class ="text-center jumbotron alert-info">
+			<h2>Simple Technology Quiz</h2>
+			<p>Having fun and test your knowledge in <strong>Technology</strong></p>
+		</div>
 		<section>
 			<div id="results"></div>
+
 			<form name="quizForm" onsubmit="return submitAnswers()">
-				<h3>1. In which decade was the American Institute of Electrical Engineers (AIEE) founded?</h3>
-				<input type="radio" name="q1" value="a" id="q1a">1850s<br>
-				<input type="radio" name="q1" value="b" id="q1a">1880s<br>
-				<input type="radio" name="q1" value="c" id="q1a">1930s<br>
-				<input type="radio" name="q1" value="d" id="q1a">1950s<br>
-			
-				<h3>2. What is part of a database that holds only one type of information?</h3>
-				<input type="radio" name="q2" value="a" id="q2a">Report<br>
-				<input type="radio" name="q2" value="b" id="q2a">Field<br>
-				<input type="radio" name="q2" value="c" id="q2a">Record<br>
-				<input type="radio" name="q2" value="d" id="q2a">File<br>
+				<div class="well">
+					<h4>1. In which decade was the American Institute of Electrical Engineers (AIEE) founded?</h4>
+					<input type="radio" name="q1" value="a" id="q1a"> 1850s<br>
+					<input type="radio" name="q1" value="b" id="q1a"> 1880s<br>
+					<input type="radio" name="q1" value="c" id="q1a"> 1930s<br>
+					<input type="radio" name="q1" value="d" id="q1a"> 1950s<br>
+				</div>
 
-				<h3>3. 'OS' computer abbreviation usually means ?</h3>
-				<input type="radio" name="q3" value="a" id="q3a">Order of Significance<br>
-				<input type="radio" name="q3" value="b" id="q3a">Open Software<br>
-				<input type="radio" name="q3" value="c" id="q3a">Operating System<br>
-				<input type="radio" name="q3" value="d" id="q3a">Optical Sensor<br>
+				<div class="well">
+					<h4>2. What is part of a database that holds only one type of information?</h4>
+					<input type="radio" name="q2" value="a" id="q2a"> Report<br>
+					<input type="radio" name="q2" value="b" id="q2a"> Field<br>
+					<input type="radio" name="q2" value="c" id="q2a"> Record<br>
+					<input type="radio" name="q2" value="d" id="q2a"> File<br>
+				</div>
+
+				<div class="well">
+					<h4>3. 'OS' computer abbreviation usually means ?</h4>
+					<input type="radio" name="q3" value="a" id="q3a"> Order of Significance<br>
+					<input type="radio" name="q3" value="b" id="q3a"> Open Software<br>
+					<input type="radio" name="q3" value="c" id="q3a"> Operating System<br>
+					<input type="radio" name="q3" value="d" id="q3a"> Optical Sensor<br>
+				</div>
+
+				<div class="well">
+					<h4>4. In which decade with the first transatlantic radio broadcast occur?</h4>
+					<input type="radio" name="q4" value="a" id="q4a"> 1850s<br>
+					<input type="radio" name="q4" value="b" id="q4a"> 1860s<br>
+					<input type="radio" name="q4" value="c" id="q4a"> 1870s<br>
+					<input type="radio" name="q4" value="d" id="q4a"> 1900s<br>
+				</div>
+
+				<div class="well">
+					<h4>5. '.MOV' extension refers usually to what kind of file?</h4>
+					<input type="radio" name="q5" value="a" id="q5a"> Image file<br>
+					<input type="radio" name="q5" value="b" id="q5a"> Animation/movie file<br>
+					<input type="radio" name="q5" value="c" id="q5a"> Audio file<br>
+					<input type="radio" name="q5" value="d" id="q5a"> MS Office document<br>
+				</div>
 				
-				<h3>4. In which decade with the first transatlantic radio broadcast occur?</h3>
-				<input type="radio" name="q4" value="a" id="q4a">1850s<br>
-				<input type="radio" name="q4" value="b" id="q4a">1860s<br>
-				<input type="radio" name="q4" value="c" id="q4a">1870s<br>
-				<input type="radio" name="q4" value="d" id="q4a">1900s<br>
-
-				<h3>5. '.MOV' extension refers usually to what kind of file?</h3>
-				<input type="radio" name="q5" value="a" id="q5a">Image file<br>
-				<input type="radio" name="q5" value="b" id="q5a">Animation/movie file<br>
-				<input type="radio" name="q5" value="c" id="q5a">Audio file<br>
-				<input type="radio" name="q5" value="d" id="q5a">MS Office document<br>
-				<br><br>
-				<input type="submit" value="Submit Answers">
+				<div class="text-right">
+					<input type="submit" value="Submit Answers" class="btn btn-success">
+				</div>
+				
 			</form>
 		</section>
+
 
 		<footer>
 			<p>Copyright &copy; 2015, All Rights Reserved</p>
 		</footer>
 	</div>
+
+	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>

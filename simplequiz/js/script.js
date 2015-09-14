@@ -28,7 +28,8 @@ function submitAnswers() {
 	}
 
 	var results = document.getElementById('results');
-	results.innerHTML = '<h3>You scored <span style="font-size:40px">'+score+'</span> out of <span style="font-size:40px">'+ total+ '</span></h3>';
+	results.innerHTML = '<h3>You scored <span style="font-size:25px">'+score+'</span> out of <span style="font-size:25px">'+ total+ '</span></h3>';
+	results.setAttribute("class", "alert alert-success");
 	alert("You score " + score +" out of "+total);
 	return false;
 }
